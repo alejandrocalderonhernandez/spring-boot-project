@@ -1,0 +1,495 @@
+2024-11-16T12:02:10.595-06:00  INFO 9428 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 9428 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T12:02:10.600-06:00  INFO 9428 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T12:02:10.631-06:00  INFO 9428 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T12:02:10.631-06:00  INFO 9428 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T12:02:10.999-06:00  INFO 9428 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T12:02:11.037-06:00  INFO 9428 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2024-11-16T12:02:11.329-06:00  INFO 9428 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T12:02:11.337-06:00  INFO 9428 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T12:02:11.337-06:00  INFO 9428 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T12:02:11.364-06:00  INFO 9428 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T12:02:11.364-06:00  INFO 9428 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 733 ms
+2024-11-16T12:02:11.383-06:00  INFO 9428 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T12:02:11.493-06:00  INFO 9428 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T12:02:11.494-06:00  INFO 9428 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T12:02:11.500-06:00  INFO 9428 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T12:02:11.619-06:00  INFO 9428 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T12:02:11.665-06:00  INFO 9428 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T12:02:11.686-06:00  INFO 9428 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T12:02:11.862-06:00  INFO 9428 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T12:02:12.409-06:00  INFO 9428 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T12:02:12.411-06:00  INFO 9428 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:02:12.618-06:00  INFO 9428 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T12:02:12.888-06:00  WARN 9428 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T12:02:13.075-06:00  INFO 9428 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T12:02:13.097-06:00  INFO 9428 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T12:02:13.104-06:00  INFO 9428 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.726 seconds (process running for 3.155)
+2024-11-16T12:02:31.851-06:00  INFO 9428 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:02:31.856-06:00  WARN 9428 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T12:02:31.856-06:00  INFO 9428 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T12:02:31.857-06:00  INFO 9428 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-16T12:02:45.764-06:00  INFO 9700 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 9700 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T12:02:45.765-06:00  INFO 9700 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T12:02:45.786-06:00  INFO 9700 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T12:02:45.786-06:00  INFO 9700 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T12:02:46.083-06:00  INFO 9700 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T12:02:46.110-06:00  INFO 9700 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2024-11-16T12:02:46.355-06:00  INFO 9700 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T12:02:46.363-06:00  INFO 9700 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T12:02:46.363-06:00  INFO 9700 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T12:02:46.382-06:00  INFO 9700 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T12:02:46.383-06:00  INFO 9700 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 597 ms
+2024-11-16T12:02:46.399-06:00  INFO 9700 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T12:02:46.507-06:00  INFO 9700 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T12:02:46.509-06:00  INFO 9700 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T12:02:46.516-06:00  INFO 9700 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T12:02:46.611-06:00  INFO 9700 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T12:02:46.633-06:00  INFO 9700 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T12:02:46.649-06:00  INFO 9700 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T12:02:46.775-06:00  INFO 9700 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T12:02:47.254-06:00  INFO 9700 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T12:02:47.255-06:00  INFO 9700 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:02:47.398-06:00  INFO 9700 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T12:02:47.605-06:00  WARN 9700 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T12:02:47.774-06:00  INFO 9700 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T12:02:47.791-06:00  INFO 9700 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T12:02:47.796-06:00  INFO 9700 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.249 seconds (process running for 2.58)
+2024-11-16T12:03:16.515-06:00  INFO 9700 --- [bump] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-16T12:03:16.516-06:00  INFO 9700 --- [bump] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-16T12:03:16.516-06:00  INFO 9700 --- [bump] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-16T12:05:29.525-06:00 DEBUG 9700 --- [bump] [http-nio-8080-exec-6] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:05:37.967-06:00  INFO 9700 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:05:37.972-06:00  WARN 9700 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T12:05:37.972-06:00  INFO 9700 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T12:05:37.974-06:00  INFO 9700 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-16T12:06:26.273-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 10469 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T12:06:26.274-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T12:06:26.300-06:00  INFO 10469 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T12:06:26.300-06:00  INFO 10469 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T12:06:26.615-06:00  INFO 10469 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T12:06:26.653-06:00  INFO 10469 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2024-11-16T12:06:26.911-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T12:06:26.918-06:00  INFO 10469 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T12:06:26.918-06:00  INFO 10469 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T12:06:26.936-06:00  INFO 10469 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T12:06:26.936-06:00  INFO 10469 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 636 ms
+2024-11-16T12:06:26.952-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T12:06:27.057-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T12:06:27.058-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T12:06:27.065-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T12:06:27.169-06:00  INFO 10469 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T12:06:27.193-06:00  INFO 10469 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T12:06:27.208-06:00  INFO 10469 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T12:06:27.338-06:00  INFO 10469 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T12:06:27.854-06:00  INFO 10469 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T12:06:27.856-06:00  INFO 10469 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:06:28.015-06:00  INFO 10469 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T12:06:28.222-06:00  WARN 10469 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T12:06:28.382-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T12:06:28.401-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T12:06:28.406-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.348 seconds (process running for 2.666)
+2024-11-16T12:06:36.010-06:00  INFO 10469 --- [bump] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-16T12:06:36.011-06:00  INFO 10469 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-16T12:06:36.012-06:00  INFO 10469 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-16T12:06:40.177-06:00 DEBUG 10469 --- [bump] [http-nio-8080-exec-3] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:07:00.409-06:00 DEBUG 10469 --- [bump] [http-nio-8080-exec-4] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:07:20.251-06:00 DEBUG 10469 --- [bump] [http-nio-8080-exec-6] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:16:27.298-06:00  INFO 10469 --- [bump] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2024-11-16T12:16:27.304-06:00  INFO 10469 --- [bump] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:16:27.308-06:00  WARN 10469 --- [bump] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T12:16:27.308-06:00  INFO 10469 --- [bump] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T12:16:27.309-06:00  INFO 10469 --- [bump] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-16T12:16:27.360-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 10469 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T12:16:27.360-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T12:16:27.429-06:00  INFO 10469 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T12:16:27.434-06:00  INFO 10469 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2024-11-16T12:16:27.488-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T12:16:27.489-06:00  INFO 10469 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T12:16:27.489-06:00  INFO 10469 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T12:16:27.493-06:00  INFO 10469 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T12:16:27.493-06:00  INFO 10469 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 132 ms
+2024-11-16T12:16:27.502-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-16T12:16:27.504-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:bump user=SA
+2024-11-16T12:16:27.504-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-16T12:16:27.505-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T12:16:27.528-06:00  INFO 10469 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T12:16:27.529-06:00  INFO 10469 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T12:16:27.533-06:00  INFO 10469 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T12:16:27.574-06:00  INFO 10469 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T12:16:27.574-06:00  INFO 10469 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:16:27.578-06:00  WARN 10469 --- [bump] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pageController' defined in file [/home/alejandro/Documents/Projects/bump/target/classes/com/debuggeandoideas/bump/controllers/PageController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.debuggeandoideas.bump.services.PageService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-11-16T12:16:27.579-06:00  INFO 10469 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:16:27.579-06:00  WARN 10469 --- [bump] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T12:16:27.579-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-16T12:16:27.580-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-16T12:16:27.580-06:00  INFO 10469 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-16T12:16:27.583-06:00  INFO 10469 --- [bump] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-16T12:16:27.604-06:00 ERROR 10469 --- [bump] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.debuggeandoideas.bump.controllers.PageController required a bean of type 'com.debuggeandoideas.bump.services.PageService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.debuggeandoideas.bump.services.PageService' in your configuration.
+
+2024-11-16T12:22:42.323-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 10469 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T12:22:42.323-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T12:22:42.388-06:00  INFO 10469 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T12:22:42.392-06:00  INFO 10469 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2024-11-16T12:22:42.433-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T12:22:42.435-06:00  INFO 10469 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T12:22:42.435-06:00  INFO 10469 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T12:22:42.440-06:00  INFO 10469 --- [bump] [restartedMain] o.a.c.c.C.[.[localhost].[/bump]          : Initializing Spring embedded WebApplicationContext
+2024-11-16T12:22:42.440-06:00  INFO 10469 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2024-11-16T12:22:42.449-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-11-16T12:22:42.451-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn12: url=jdbc:h2:mem:bump user=SA
+2024-11-16T12:22:42.451-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-11-16T12:22:42.451-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T12:22:42.472-06:00  INFO 10469 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T12:22:42.473-06:00  INFO 10469 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T12:22:42.477-06:00  INFO 10469 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T12:22:42.511-06:00  INFO 10469 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T12:22:42.511-06:00  INFO 10469 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:22:42.561-06:00  WARN 10469 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T12:22:42.636-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T12:22:42.649-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T12:22:42.652-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 0.341 seconds (process running for 976.913)
+2024-11-16T12:22:42.654-06:00  INFO 10469 --- [bump] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-16T12:22:44.039-06:00  INFO 10469 --- [bump] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2024-11-16T12:22:44.043-06:00  INFO 10469 --- [bump] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:22:44.044-06:00  WARN 10469 --- [bump] [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T12:22:44.044-06:00  INFO 10469 --- [bump] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-11-16T12:22:44.044-06:00  INFO 10469 --- [bump] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-11-16T12:22:44.091-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 10469 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T12:22:44.092-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T12:22:44.143-06:00  INFO 10469 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T12:22:44.147-06:00  INFO 10469 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2024-11-16T12:22:44.184-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T12:22:44.185-06:00  INFO 10469 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T12:22:44.185-06:00  INFO 10469 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T12:22:44.188-06:00  INFO 10469 --- [bump] [restartedMain] o.a.c.c.C.[.[localhost].[/bump]          : Initializing Spring embedded WebApplicationContext
+2024-11-16T12:22:44.188-06:00  INFO 10469 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 95 ms
+2024-11-16T12:22:44.195-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-11-16T12:22:44.196-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn22: url=jdbc:h2:mem:bump user=SA
+2024-11-16T12:22:44.197-06:00  INFO 10469 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-11-16T12:22:44.197-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T12:22:44.212-06:00  INFO 10469 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T12:22:44.213-06:00  INFO 10469 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T12:22:44.216-06:00  INFO 10469 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T12:22:44.244-06:00  INFO 10469 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T12:22:44.244-06:00  INFO 10469 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:22:44.291-06:00  WARN 10469 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T12:22:44.328-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T12:22:44.334-06:00  INFO 10469 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T12:22:44.335-06:00  INFO 10469 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 0.256 seconds (process running for 978.595)
+2024-11-16T12:22:44.336-06:00  INFO 10469 --- [bump] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-16T12:24:10.437-06:00  INFO 10469 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:24:10.438-06:00  WARN 10469 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T12:24:10.438-06:00  INFO 10469 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-11-16T12:24:10.439-06:00  INFO 10469 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-11-16T12:24:11.701-06:00  INFO 14056 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 14056 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T12:24:11.702-06:00  INFO 14056 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T12:24:11.724-06:00  INFO 14056 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T12:24:11.724-06:00  INFO 14056 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T12:24:12.034-06:00  INFO 14056 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T12:24:12.062-06:00  INFO 14056 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-11-16T12:24:12.319-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T12:24:12.332-06:00  INFO 14056 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T12:24:12.332-06:00  INFO 14056 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T12:24:12.356-06:00  INFO 14056 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T12:24:12.356-06:00  INFO 14056 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 632 ms
+2024-11-16T12:24:12.374-06:00  INFO 14056 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T12:24:12.472-06:00  INFO 14056 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T12:24:12.473-06:00  INFO 14056 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T12:24:12.479-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T12:24:12.595-06:00  INFO 14056 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T12:24:12.621-06:00  INFO 14056 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T12:24:12.638-06:00  INFO 14056 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T12:24:12.771-06:00  INFO 14056 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T12:24:13.246-06:00  INFO 14056 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T12:24:13.250-06:00  INFO 14056 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:24:13.430-06:00  INFO 14056 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T12:24:13.672-06:00  WARN 14056 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T12:24:13.877-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T12:24:13.900-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T12:24:13.906-06:00  INFO 14056 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.417 seconds (process running for 2.744)
+2024-11-16T12:24:41.379-06:00  INFO 14056 --- [bump] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-16T12:24:41.380-06:00  INFO 14056 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-16T12:24:41.380-06:00  INFO 14056 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-16T12:24:41.489-06:00  WARN 14056 --- [bump] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Title not found]
+2024-11-16T12:25:18.419-06:00 DEBUG 14056 --- [bump] [http-nio-8080-exec-5] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:25:27.726-06:00 DEBUG 14056 --- [bump] [http-nio-8080-exec-6] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:26:07.458-06:00  WARN 14056 --- [bump] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Title not found]
+2024-11-16T12:26:26.087-06:00 DEBUG 14056 --- [bump] [http-nio-8080-exec-2] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:26:33.145-06:00 DEBUG 14056 --- [bump] [http-nio-8080-exec-10] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:26:52.693-06:00 DEBUG 14056 --- [bump] [http-nio-8080-exec-5] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:26:55.399-06:00 DEBUG 14056 --- [bump] [http-nio-8080-exec-2] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:27:06.085-06:00 DEBUG 14056 --- [bump] [http-nio-8080-exec-4] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.debuggeandoideas.bump.entities.PageEntity.posts#4]
+2024-11-16T12:27:06.086-06:00  WARN 14056 --- [bump] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: post id not found]
+2024-11-16T12:41:22.116-06:00  INFO 14056 --- [bump] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-11-16T12:41:22.123-06:00  INFO 14056 --- [bump] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:41:22.127-06:00  WARN 14056 --- [bump] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T12:41:22.128-06:00  INFO 14056 --- [bump] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T12:41:22.129-06:00  INFO 14056 --- [bump] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-16T12:41:22.185-06:00  INFO 14056 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 14056 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T12:41:22.186-06:00  INFO 14056 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T12:41:22.275-06:00  INFO 14056 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T12:41:22.281-06:00  INFO 14056 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2024-11-16T12:41:22.336-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T12:41:22.337-06:00  INFO 14056 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T12:41:22.337-06:00  INFO 14056 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T12:41:22.341-06:00  INFO 14056 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T12:41:22.341-06:00  INFO 14056 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 154 ms
+2024-11-16T12:41:22.350-06:00  INFO 14056 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-16T12:41:22.352-06:00  INFO 14056 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:bump user=SA
+2024-11-16T12:41:22.352-06:00  INFO 14056 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-16T12:41:22.353-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T12:41:22.374-06:00  INFO 14056 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T12:41:22.375-06:00  INFO 14056 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T12:41:22.380-06:00  INFO 14056 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T12:41:22.421-06:00  INFO 14056 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T12:41:22.421-06:00  INFO 14056 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:41:22.489-06:00  WARN 14056 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T12:41:22.549-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T12:41:22.556-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T12:41:22.558-06:00  INFO 14056 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 0.389 seconds (process running for 1031.397)
+2024-11-16T12:41:22.559-06:00  INFO 14056 --- [bump] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-16T12:42:38.011-06:00  INFO 14056 --- [bump] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-11-16T12:42:38.015-06:00  INFO 14056 --- [bump] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:42:38.016-06:00  WARN 14056 --- [bump] [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T12:42:38.016-06:00  INFO 14056 --- [bump] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-16T12:42:38.017-06:00  INFO 14056 --- [bump] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-16T12:42:38.064-06:00  INFO 14056 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 14056 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T12:42:38.064-06:00  INFO 14056 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T12:42:38.127-06:00  INFO 14056 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T12:42:38.131-06:00  INFO 14056 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2024-11-16T12:42:38.172-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T12:42:38.172-06:00  INFO 14056 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T12:42:38.173-06:00  INFO 14056 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T12:42:38.177-06:00  INFO 14056 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T12:42:38.177-06:00  INFO 14056 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 112 ms
+2024-11-16T12:42:38.185-06:00  INFO 14056 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-11-16T12:42:38.187-06:00  INFO 14056 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn21: url=jdbc:h2:mem:bump user=SA
+2024-11-16T12:42:38.187-06:00  INFO 14056 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-11-16T12:42:38.187-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T12:42:38.205-06:00  INFO 14056 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T12:42:38.206-06:00  INFO 14056 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T12:42:38.209-06:00  INFO 14056 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T12:42:38.245-06:00  INFO 14056 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T12:42:38.245-06:00  INFO 14056 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:42:38.305-06:00  WARN 14056 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T12:42:38.350-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T12:42:38.357-06:00  INFO 14056 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T12:42:38.358-06:00  INFO 14056 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 0.305 seconds (process running for 1107.197)
+2024-11-16T12:42:38.359-06:00  INFO 14056 --- [bump] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-16T12:43:53.704-06:00  INFO 14056 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T12:43:53.705-06:00  WARN 14056 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T12:43:53.705-06:00  INFO 14056 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-11-16T12:43:53.706-06:00  INFO 14056 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-11-16T13:07:58.397-06:00  INFO 20900 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 20900 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T13:07:58.398-06:00  INFO 20900 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T13:07:58.423-06:00  INFO 20900 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T13:07:58.423-06:00  INFO 20900 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T13:07:58.723-06:00  INFO 20900 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T13:07:58.751-06:00  INFO 20900 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-11-16T13:07:59.008-06:00  INFO 20900 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T13:07:59.020-06:00  INFO 20900 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T13:07:59.021-06:00  INFO 20900 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T13:07:59.040-06:00  INFO 20900 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T13:07:59.041-06:00  INFO 20900 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 617 ms
+2024-11-16T13:07:59.058-06:00  INFO 20900 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T13:07:59.141-06:00  INFO 20900 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T13:07:59.142-06:00  INFO 20900 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T13:07:59.148-06:00  INFO 20900 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T13:07:59.254-06:00  INFO 20900 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T13:07:59.277-06:00  INFO 20900 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T13:07:59.292-06:00  INFO 20900 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T13:07:59.427-06:00  INFO 20900 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T13:07:59.901-06:00  INFO 20900 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T13:07:59.903-06:00  INFO 20900 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:08:00.073-06:00  INFO 20900 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T13:08:00.282-06:00  WARN 20900 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T13:08:00.463-06:00  INFO 20900 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T13:08:00.480-06:00  INFO 20900 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T13:08:00.487-06:00  INFO 20900 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.279 seconds (process running for 2.605)
+2024-11-16T13:09:28.580-06:00  INFO 20900 --- [bump] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-16T13:09:28.580-06:00  INFO 20900 --- [bump] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-16T13:09:28.581-06:00  INFO 20900 --- [bump] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-16T13:12:27.573-06:00  INFO 20900 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:12:27.576-06:00  WARN 20900 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T13:12:27.576-06:00  INFO 20900 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T13:12:27.577-06:00  INFO 20900 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-16T13:12:28.670-06:00  INFO 22084 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 22084 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T13:12:28.671-06:00  INFO 22084 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T13:12:28.691-06:00  INFO 22084 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T13:12:28.691-06:00  INFO 22084 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T13:12:28.965-06:00  INFO 22084 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T13:12:28.996-06:00  INFO 22084 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2024-11-16T13:12:29.225-06:00  INFO 22084 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T13:12:29.231-06:00  INFO 22084 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T13:12:29.232-06:00  INFO 22084 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T13:12:29.249-06:00  INFO 22084 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T13:12:29.249-06:00  INFO 22084 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 558 ms
+2024-11-16T13:12:29.263-06:00  INFO 22084 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T13:12:29.354-06:00  INFO 22084 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T13:12:29.355-06:00  INFO 22084 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T13:12:29.361-06:00  INFO 22084 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T13:12:29.441-06:00  INFO 22084 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T13:12:29.464-06:00  INFO 22084 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T13:12:29.479-06:00  INFO 22084 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T13:12:29.593-06:00  INFO 22084 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T13:12:30.028-06:00  INFO 22084 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T13:12:30.029-06:00  INFO 22084 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:12:30.162-06:00  INFO 22084 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T13:12:30.358-06:00  WARN 22084 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T13:12:30.512-06:00  INFO 22084 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T13:12:30.533-06:00  INFO 22084 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T13:12:30.538-06:00  INFO 22084 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.07 seconds (process running for 2.366)
+2024-11-16T13:12:32.727-06:00  INFO 22084 --- [bump] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-16T13:12:32.727-06:00  INFO 22084 --- [bump] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-16T13:12:32.728-06:00  INFO 22084 --- [bump] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-16T13:13:01.577-06:00  INFO 22084 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:13:01.581-06:00  WARN 22084 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T13:13:01.581-06:00  INFO 22084 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T13:13:01.582-06:00  INFO 22084 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-16T13:13:03.538-06:00  INFO 22343 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 22343 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T13:13:03.539-06:00  INFO 22343 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T13:13:03.560-06:00  INFO 22343 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T13:13:03.560-06:00  INFO 22343 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T13:13:03.834-06:00  INFO 22343 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T13:13:03.864-06:00  INFO 22343 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2024-11-16T13:13:04.089-06:00  INFO 22343 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T13:13:04.096-06:00  INFO 22343 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T13:13:04.096-06:00  INFO 22343 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T13:13:04.113-06:00  INFO 22343 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T13:13:04.114-06:00  INFO 22343 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 553 ms
+2024-11-16T13:13:04.128-06:00  INFO 22343 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T13:13:04.219-06:00  INFO 22343 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T13:13:04.220-06:00  INFO 22343 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T13:13:04.225-06:00  INFO 22343 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T13:13:04.303-06:00  INFO 22343 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T13:13:04.325-06:00  INFO 22343 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T13:13:04.339-06:00  INFO 22343 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T13:13:04.454-06:00  INFO 22343 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T13:13:04.881-06:00  INFO 22343 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T13:13:04.883-06:00  INFO 22343 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:13:05.021-06:00  INFO 22343 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T13:13:05.218-06:00  WARN 22343 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T13:13:05.366-06:00  INFO 22343 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T13:13:05.387-06:00  INFO 22343 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T13:13:05.392-06:00  INFO 22343 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.051 seconds (process running for 2.364)
+2024-11-16T13:13:09.244-06:00  INFO 22343 --- [bump] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-16T13:13:09.246-06:00  INFO 22343 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-16T13:13:09.247-06:00  INFO 22343 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-16T13:16:40.382-06:00  INFO 22343 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:16:40.386-06:00  WARN 22343 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T13:16:40.387-06:00  INFO 22343 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T13:16:40.388-06:00  INFO 22343 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-16T13:16:42.333-06:00  INFO 22871 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 22871 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T13:16:42.334-06:00  INFO 22871 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T13:16:42.352-06:00  INFO 22871 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T13:16:42.353-06:00  INFO 22871 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T13:16:42.619-06:00  INFO 22871 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T13:16:42.643-06:00  INFO 22871 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-11-16T13:16:42.867-06:00  INFO 22871 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T13:16:42.873-06:00  INFO 22871 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T13:16:42.873-06:00  INFO 22871 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T13:16:42.891-06:00  INFO 22871 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T13:16:42.891-06:00  INFO 22871 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 538 ms
+2024-11-16T13:16:42.906-06:00  INFO 22871 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T13:16:42.992-06:00  INFO 22871 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T13:16:42.993-06:00  INFO 22871 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T13:16:42.999-06:00  INFO 22871 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T13:16:43.074-06:00  INFO 22871 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T13:16:43.096-06:00  INFO 22871 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T13:16:43.111-06:00  INFO 22871 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T13:16:43.226-06:00  INFO 22871 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T13:16:43.675-06:00  INFO 22871 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T13:16:43.677-06:00  INFO 22871 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:16:43.815-06:00  INFO 22871 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T13:16:44.009-06:00  WARN 22871 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T13:16:44.162-06:00  INFO 22871 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T13:16:44.181-06:00  INFO 22871 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T13:16:44.186-06:00  INFO 22871 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.051 seconds (process running for 2.326)
+2024-11-16T13:16:47.971-06:00  INFO 22871 --- [bump] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-16T13:16:47.973-06:00  INFO 22871 --- [bump] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-16T13:16:47.974-06:00  INFO 22871 --- [bump] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-16T13:19:25.494-06:00  INFO 22871 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:19:25.499-06:00  WARN 22871 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T13:19:25.500-06:00  INFO 22871 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T13:19:25.500-06:00  INFO 22871 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-16T13:19:26.558-06:00  INFO 23382 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 23382 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T13:19:26.559-06:00  INFO 23382 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T13:19:26.578-06:00  INFO 23382 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T13:19:26.579-06:00  INFO 23382 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T13:19:26.857-06:00  INFO 23382 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T13:19:26.889-06:00  INFO 23382 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2024-11-16T13:19:27.122-06:00  INFO 23382 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T13:19:27.129-06:00  INFO 23382 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T13:19:27.129-06:00  INFO 23382 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T13:19:27.147-06:00  INFO 23382 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T13:19:27.147-06:00  INFO 23382 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 568 ms
+2024-11-16T13:19:27.161-06:00  INFO 23382 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T13:19:27.252-06:00  INFO 23382 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T13:19:27.253-06:00  INFO 23382 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T13:19:27.258-06:00  INFO 23382 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T13:19:27.338-06:00  INFO 23382 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T13:19:27.359-06:00  INFO 23382 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T13:19:27.374-06:00  INFO 23382 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T13:19:27.488-06:00  INFO 23382 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T13:19:27.911-06:00  INFO 23382 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T13:19:27.912-06:00  INFO 23382 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:19:28.042-06:00  INFO 23382 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T13:19:28.230-06:00  WARN 23382 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T13:19:28.394-06:00  INFO 23382 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T13:19:28.412-06:00  INFO 23382 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T13:19:28.416-06:00  INFO 23382 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.056 seconds (process running for 2.35)
+2024-11-16T13:19:32.060-06:00  INFO 23382 --- [bump] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-16T13:19:32.062-06:00  INFO 23382 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-16T13:19:32.063-06:00  INFO 23382 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-16T13:20:29.409-06:00  INFO 23382 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:20:29.413-06:00  WARN 23382 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T13:20:29.413-06:00  INFO 23382 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T13:20:29.414-06:00  INFO 23382 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-16T13:22:35.098-06:00  INFO 24204 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Starting BumpApplication using Java 21.0.5 with PID 24204 (/home/alejandro/Documents/Projects/bump/target/classes started by alejandro in /home/alejandro/Documents/Projects/bump)
+2024-11-16T13:22:35.099-06:00  INFO 24204 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-11-16T13:22:35.127-06:00  INFO 24204 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-16T13:22:35.128-06:00  INFO 24204 --- [bump] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-16T13:22:35.452-06:00  INFO 24204 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-16T13:22:35.485-06:00  INFO 24204 --- [bump] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2024-11-16T13:22:35.749-06:00  INFO 24204 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-16T13:22:35.757-06:00  INFO 24204 --- [bump] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-16T13:22:35.758-06:00  INFO 24204 --- [bump] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-16T13:22:35.776-06:00  INFO 24204 --- [bump] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring embedded WebApplicationContext
+2024-11-16T13:22:35.776-06:00  INFO 24204 --- [bump] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 648 ms
+2024-11-16T13:22:35.793-06:00  INFO 24204 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-16T13:22:35.895-06:00  INFO 24204 --- [bump] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bump user=SA
+2024-11-16T13:22:35.896-06:00  INFO 24204 --- [bump] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-16T13:22:35.902-06:00  INFO 24204 --- [bump] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bump'
+2024-11-16T13:22:35.995-06:00  INFO 24204 --- [bump] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-16T13:22:36.020-06:00  INFO 24204 --- [bump] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-16T13:22:36.036-06:00  INFO 24204 --- [bump] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-16T13:22:36.172-06:00  INFO 24204 --- [bump] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-16T13:22:36.650-06:00  INFO 24204 --- [bump] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-16T13:22:36.652-06:00  INFO 24204 --- [bump] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:22:36.793-06:00  INFO 24204 --- [bump] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-16T13:22:36.989-06:00  WARN 24204 --- [bump] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-16T13:22:37.161-06:00  INFO 24204 --- [bump] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-16T13:22:37.184-06:00  INFO 24204 --- [bump] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/bump'
+2024-11-16T13:22:37.189-06:00  INFO 24204 --- [bump] [restartedMain] c.debuggeandoideas.bump.BumpApplication  : Started BumpApplication in 2.303 seconds (process running for 2.611)
+2024-11-16T13:23:48.596-06:00  INFO 24204 --- [bump] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/bump]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-16T13:23:48.597-06:00  INFO 24204 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-16T13:23:48.597-06:00  INFO 24204 --- [bump] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-16T13:27:12.923-06:00  INFO 24204 --- [bump] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-16T13:27:12.927-06:00  WARN 24204 --- [bump] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-16T13:27:12.927-06:00  INFO 24204 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-16T13:27:12.928-06:00  INFO 24204 --- [bump] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
