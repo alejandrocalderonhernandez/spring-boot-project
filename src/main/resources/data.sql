@@ -1,8 +1,8 @@
 -- Insertar datos en la tabla AppUser
-INSERT INTO App_User (name, age, mail, password) VALUES ('User1', 25, 'user1@example.com', 'password1');
-INSERT INTO App_User (name, age, mail, password) VALUES ('User2', 30, 'user2@example.com', 'password2');
-INSERT INTO App_User (name, age, mail, password) VALUES ('User3', 28, 'user3@example.com', 'password3');
-INSERT INTO App_User (name, age, mail, password) VALUES ('User4', 29, 'user4@example.com', 'password4');
+INSERT INTO App_User (name, age, mail, password) VALUES ('User1', 25, 'user1@example.com', '$2a$10$2Dbs7pKECSqPQg9sIYYdFeaKDlCiW6IDm9Ok/lmv7DmVquLUd0Rpa');
+INSERT INTO App_User (name, age, mail, password) VALUES ('User2', 30, 'user2@example.com', '$2a$10$2Dbs7pKECSqPQg9sIYYdFeaKDlCiW6IDm9Ok/lmv7DmVquLUd0Rpa');
+INSERT INTO App_User (name, age, mail, password) VALUES ('User3', 28, 'user3@example.com', '$2a$10$2Dbs7pKECSqPQg9sIYYdFeaKDlCiW6IDm9Ok/lmv7DmVquLUd0Rpa');
+INSERT INTO App_User (name, age, mail, password) VALUES ('User4', 29, 'user4@example.com', '$2a$10$2Dbs7pKECSqPQg9sIYYdFeaKDlCiW6IDm9Ok/lmv7DmVquLUd0Rpa');
 
 -- Insertar datos en la tabla Page para cada usuario
 INSERT INTO Page (date_creation, title, id_User) VALUES (CURRENT_TIMESTAMP, 'User1 Page', 1);

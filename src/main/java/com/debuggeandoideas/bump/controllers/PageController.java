@@ -17,7 +17,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @RestController // use to expose RESTFull
-@RequestMapping(path = "page") //Wat to get this controller
+@RequestMapping(path = "page") //path to get this controller
 @AllArgsConstructor
 public class PageController {
 

@@ -3,7 +3,7 @@ CREATE TABLE App_User (
                          id INT AUTO_INCREMENT PRIMARY KEY,
                          name VARCHAR(255),
                          age INT,
-                         mail VARCHAR(255),
+                         mail VARCHAR(255) UNIQUE,
                          password VARCHAR(255)
 );
 
